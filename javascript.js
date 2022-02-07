@@ -44,7 +44,7 @@ function game(){
                 playerScore++;
                 console.log("You win! Scissors beats Paper!");
             } else {
-                console.log("Error, please check spelling")
+                console.log("Error, please check spelling");
             }
         }   
         console.log(playRound(playerSelection, computerSelection));
