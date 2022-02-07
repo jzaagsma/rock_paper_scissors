@@ -59,7 +59,7 @@ function winner(){
     } else if (playerScore < computerScore){
         return "Computer";
     } else {
-        return "Nobody"
+        return "Nobody";
     }
 }
 console.log(gameWinner + "Wins!");
