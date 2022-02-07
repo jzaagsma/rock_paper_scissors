@@ -1,27 +1,77 @@
-const userScore = 0;
-const computerScore = 0; 
-const computerSelection = computerPlay();
-const playerSelection = playerPlay();
+let playerScore = 0;
+let computerScore = 0; 
 
+function game(){
 
-function computerPlay(x){
-    let randomNumber = Math.floor((Math.random() *3) +1);
-    switch (randomNumber){
-        case 1:
-            return 'rock';
-        case 2:
-            return 'paper';
-        case 3:
-            return 'scissors';
-    }
+    for (gameRound = 0; gameRound <5; gameRound++){
+        let computerSelection = computerPlay();
+        let playerSelection = playerPlay();
+
+        function computerPlay(){
+            let randomNumber = Math.floor((Math.random() *3) +1);
+            switch (randomNumber){
+                case 1:
+                    return 'rock';
+                case 2:
+                    return 'paper';
+                case 3:
+                    return 'scissors';
+            }
+        }
+
+        function playerPlay(){
+            let selection = prompt("Please enter 'Rock', 'Paper', or 'Scissors'");
+            let answer = selection.toLowerCase();
+            return answer;
+        }
+
+        function playRound(playerSelection, computerSelection){
+            if (playerSelection === computerSelection){
+                console.log("Round: " + gameRound);
+                console.log("You tied!");
+            } else if(playerSelection === "rock" & computerSelection === "paper"){
+                computerScore++; 
+                //gameRound++;
+                console.log("Round: " + gameRound);
+                console.log("You lose! Paper beats Rock!");
+            } else if(playerSelection === "rock" & computerSelection === "scissors"){
+                playerScore++;
+                //gameRound++;
+                console.log("Round: " + gameRound);
+                console.log("You win! Rock beats Scissors!");
+            } else if(playerSelection === "paper" & computerSelection === "rock"){
+                playerScore++;
+                //gameRound++;
+                console.log("Round: " + gameRound);
+                console.log("You win! Paper beats Rock!");
+            } else if(playerSelection === "paper" & computerSelection === "scissors"){
+                computerScore++;
+                //gameRound++;
+                console.log("Round: " + gameRound);
+                console.log("You lose! Scissors beats Paper!");
+            } else if(playerSelection === "scissors" & computerSelection === "rock"){
+                ComputerScore++;
+                //gameRound++;
+                console.log("Round: " + gameRound);
+                console.log("You lose! Rock beats Scissors!");
+            } else if(playerSelection === "scissors" & computerSelection === "paper"){
+                playerScore++;
+                //gameRound++;
+                console.log("Round: " + gameRound);
+                console.log("You win! Scissors beats Paper!");
+            } else {
+                console.log("Round: " + gameRound);
+                console.log("Error, please check spelling")
+            }
+        }   
+        console.log(playRound(playerSelection, computerSelection));
+    }    
 }
 
-console.log(computerSelection);
+console.log(game());
+console.log(`Score: Player = ${playerScore}: Computer = ${computerScore}`);
+let 
 
-function playerPlay(x){
-    let selection = prompt("Please enter 'Rock', 'Paper', or 'Scissors'");
-    let answer = selection.toLowerCase();
-    return answer;
-}
+function winner();
 
-console.log(playerSelection);
+console.log()
