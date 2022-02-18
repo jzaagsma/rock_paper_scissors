@@ -16,10 +16,10 @@ function game(){
                     return 'scissors';
             }
         }
-        function playerPlay(){
-            let selection = prompt("Please enter 'Rock', 'Paper', or 'Scissors'");
-            let answer = selection.toLowerCase();
-            return answer;
+        //function playerPlay(){
+            //let selection = prompt("Please enter 'Rock', 'Paper', or 'Scissors'");
+            //let answer = selection.toLowerCase();
+            //return answer;
         }
         function playRound(playerSelection, computerSelection){
             console.log("Round: " + gameRound);
