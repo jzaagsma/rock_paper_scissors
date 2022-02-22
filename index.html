@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <script src="javascript.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    
+    <title>Rock Paper Scissors </title>
 </head>
 <body>
-    <header></header>
-    <h1>Rock Paper Scissors</h1>
-    <div id = "scoreBoard">
-        <h1>Round : 1</h1>
-        <h1>Score</h1>
-        <h3>Computer Score: </h3>
-        <h3>Player Score: </h3>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="score">
+        <div id="player_label" class="badge">Player</div>;
+        <div id="computer_label" class="badge">Computer</div>;
+        <span id="player_score">0</span>:<span id="computer _score">0</span>;
     </div>
-    <div id = "buttons">
-        <button>rock</button>
-        <button>paper</button>
-        <button>scissors</button>
+
+    <div class="result">
+        <p>Paper covers Rock. You win!</p>
     </div>
-    <footer></footer>
+
+    <div class="choices">
+        <div class="choice">
+            <img src="/img/rock_button.jpg" 
+            alt="A simple image of a hand making a fist representing the rock
+            choice">;
+        </div>
+        <div class="choice">
+            <img src="/img/paper_button.jpg" 
+            alt="A simple image of a flat hand representing the rock choice">;
+        </div>
+        <div class="choice">
+            <img src="/img/scissors_button.jpg" 
+            alt="A simple image of a hand holding out two fingers representing
+            the scissors choice">;
+        </div>
+    </div>
 </body>
 </html>
