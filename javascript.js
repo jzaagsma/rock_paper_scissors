@@ -11,3 +11,5 @@ const scissors_div = document.querySelector("scissors");
 // this is called "caching the DOM", which means storing them for use later. 
 // we are storing all of these things in variables so that we can manipulate 
 // the DOM using them later. 
+
+// at 31:36 on youtube video
