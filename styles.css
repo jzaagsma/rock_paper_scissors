@@ -68,14 +68,13 @@ header > h1 {
     display: inline-block;
     padding: 10px;
     margin: 0 10px;
-    border: 4px solid rgb(29, 85, 53);
+    border: 4px solid rgb(189, 199, 211);
     border-radius: 25%;
-    transition: all 0.3s ease;
+    transition: all 0.125s ease;
 }
 
 .choice:hover{
     cursor: pointer;
-    border: 6px solid rgb(29, 85, 53);
 
 }
 
@@ -84,4 +83,13 @@ header > h1 {
     font-size: x-large;
     color: rgb(32, 25, 73);
     margin-top: 25px;
+}
+.green_glow {
+    border: 4px solid seagreen;
+    box-shadow: 0 0 10px rgb(37, 112, 69);
+}
+
+.red_glow {
+    border: 4px solid firebrick;
+    box-shadow: 0 0 10px rgb(139, 26, 26);
 }
